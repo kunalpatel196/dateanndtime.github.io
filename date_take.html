@@ -53,9 +53,29 @@ function submit(){
     
     var x=document.getElementById("old").value;
     var y=document.getElementById("new").value;
-    if ( x <= y){
+   
 
-        console.log(x);
+        /*var date1 = x.split('-');
+        var date2 = y.split('-');
+    var d1 = date1[2];
+    var m1 = date1[1];
+    var y1 = date1[0];
+
+    var d2 = date2[2];
+    var m2 = date2[1];
+    var y2 = date2[0];
+
+     var x = d2-d1 ;
+     var y = m2-m1 ;
+     var z = y2-y1 ;
+    document.getElementById('result').innerHTML=y;
+    document.getElementById('res').innerHTML=z;
+    document.getElementById('resul').innerHTML=x;
+    }*/
+   
+    
+    if ( x <= y){
+         console.log(x);
         console.log(y);
         const d1=new Date(x);
         const d2=new Date(y);
@@ -71,12 +91,12 @@ function submit(){
         
         document.getElementById('result').innerHTML=r;
         document.getElementById('res').innerHTML=q;
-        document.getElementById('resul').innerHTML=w;
+        document.getElementById('resul').innerHTML=w; 
     }
     else{
       document.write("WARNING :- your old value is grater than new value 😫😯😴😴😴😴😴😴😴😴😴😴😴😴😕😕😤😤😤😤😤");
     }
-}
 
+}
 </script>
 </html>
