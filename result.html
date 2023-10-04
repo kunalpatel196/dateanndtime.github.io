@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(0, 0, 0);
+            background-image: url("https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1696377600&semt=ais");
+            background-repeat:no-repeat;
+            background-size:cover;            
+          }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            border: 1px solid black;
+          }
+          th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+          }
+          th {
+            background-color: rgb(240, 76, 16);
+            color: black;
+          }
+          tr:nth-child(even) {
+            background-color: rgb(24, 240, 16);
+            color: rgb(0, 0, 0);
+          }
+          input[type="search"] {
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 16px;
+            margin-left: 40%;
+            margin-top: 10%;
+          }
+          button {
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: rgb(240, 76, 16);
+            color: white;
+            border: none;
+            cursor: pointer;
+            align-self: center;
+          }
+          button:hover {
+            background-color: rgb(14, 100, 212);
+          }
+        </style>
+    </style>
+  </head>
+  <body>
+    <input type="search" placeholder="find your result" id="sear" />
+    <button type="button" onclick="serarch()">ENTER</button>
+    <div id="result"></div>
+  </body>
+  <script>
+    function serarch() {
+      var want = Number(document.getElementById("sear").value);
+
+      if (want == 104) {
+        document.write(
+          "<table border='1px solid black' width='100%'' height='200px' style='background-color: aquamarine; color:black';> <tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);' > <td> S.NO...</td><td>ROLL NO</td><td>NAME...</td><td>AGE..</td><td>CLASS..</td><td>maths</td><td>physics</td><td>chemisty</td><td>english</td><td>hindi</td><td>TOTAL MARKS</td><td>PERCENTAGE</td></tr>"
+        );
+        document.write(
+          "<tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);'><td>1</td> <TD>104</TD><td>Akash</td><td >18</td><td >12</td><td id='a1'>97</td><td id='a2'>85</td><td id='a3'>88</td><td id='a4'>81</td><td id='a5'>89</td><td id='a6'></td><td id='a7'></td></tr></table>"
+        );
+        var x = Number(document.getElementById("a1").innerHTML);
+        var y = Number(document.getElementById("a2").innerHTML);
+        var z = Number(document.getElementById("a3").innerHTML);
+        var q = Number(document.getElementById("a4").innerHTML);
+        var r = Number(document.getElementById("a5").innerHTML);
+        var w = x + y + z + q + r;
+        document.getElementById("a6").innerHTML = w;
+        var t = (w / 500) * 100;
+        document.getElementById("a7").innerHTML = t;
+      } else if (want == 105) {
+        document.write(
+          "<table border='1px solid black' width='100%'' height='200px' style='background-color: aquamarine; color:black';> <tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);' > <td> S.NO...</td><td>ROLL NO</td><td>NAME...</td><td>AGE..</td><td>CLASS..</td><td>maths</td><td>physics</td><td>chemisty</td><td>english</td><td>hindi</td><td>TOTAL MARKS</td><td>PERCENTAGE</td></tr>"
+        );
+        document.write(
+          "<tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);'><td>2</td><td>105</td><td>kamal</td><td>17</td><td>12</td><td id='k1'>91</td><td id='k2'>92</td><td id='k3'>90</td><td id='k4'>87</td><td id='k5'>85</td><td id='k6'></td><td id='k7'></td></tr></table>"
+        );
+        var x = Number(document.getElementById("k1").innerHTML);
+        var y = Number(document.getElementById("k2").innerHTML);
+        var z = Number(document.getElementById("k3").innerHTML);
+        var q = Number(document.getElementById("k4").innerHTML);
+        var r = Number(document.getElementById("k5").innerHTML);
+        var w = x + y + z + q + r;
+        document.getElementById("k6").innerHTML = w;
+        var t = (w / 500) * 100;
+        document.getElementById("k7").innerHTML = t;
+      } else if (want == 106) {
+        document.write(
+          "<table border='1px solid black' width='100%'' height='200px' style='background-color: aquamarine; color:black';> <tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);' > <td> S.NO...</td><td>ROLL NO</td><td>NAME...</td><td>AGE..</td><td>CLASS..</td><td>maths</td><td>physics</td><td>chemisty</td><td>english</td><td>hindi</td><td>TOTAL MARKS</td><td>PERCENTAGE</td></tr>"
+        );
+        document.write(
+          "<tr align='center' style='background-color: rgb(252, 252, 252); color:rgb(14, 100, 212);'><td>3</td><td>106</td><td>ronak</td><td>17</td><td>12</td><td id='g1'>90</td><td id='g2'>95</td><td id='g3'>91</td><td id='g4'>85</td><td id='g5'>88</td><td id='g6'></td><td id='g7'></td></tr>"
+        );
+        var x = Number(document.getElementById("g1").innerHTML);
+        var y = Number(document.getElementById("g2").innerHTML);
+        var z = Number(document.getElementById("g3").innerHTML);
+        var q = Number(document.getElementById("g4").innerHTML);
+        var r = Number(document.getElementById("g5").innerHTML);
+        var w = x + y + z + q + r;
+        document.getElementById("g6").innerHTML = w;
+        var t = (w / 500) * 100;
+        document.getElementById("g7").innerHTML = t;
+      } else if (want == 107) {
+        document.write(
+          "<table border='1px solid black' width='100%'' height='200px' style='background-color: aquamarine; color:black';> <tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);' > <td> S.NO...</td><td>ROLL NO</td><td>NAME...</td><td>AGE..</td><td>CLASS..</td><td>maths</td><td>physics</td><td>chemisty</td><td>english</td><td>hindi</td><td>TOTAL MARKS</td><td>PERCENTAGE</td></tr>"
+        );
+        document.write(
+          " <tr align='center' style='background-color: rgb(24, 240, 16); color:rgb(0, 0, 0);'><td>4</td><td>107</td><td>gagan</td><td>18</td><td>12</td><td id='r1'>87</td><td id='r2'>97</td><td id='r3'>90</td><td id='r4'>91</td><td id='r5'>88</td><td id='r6'></td><td id='r7'></td></tr>"
+        );
+        var x = Number(document.getElementById("r1").innerHTML);
+        var y = Number(document.getElementById("r2").innerHTML);
+        var z = Number(document.getElementById("r3").innerHTML);
+        var q = Number(document.getElementById("r4").innerHTML);
+        var r = Number(document.getElementById("r5").innerHTML);
+        var w = x + y + z + q + r;
+        document.getElementById("r6").innerHTML = w;
+        var t = (w / 500) * 100;
+        document.getElementById("r7").innerHTML = t;
+      } else if (want == 108) {
+        document.write(
+          "<table border='1px solid black' width='100%'' height='200px' style='background-color: aquamarine; color:black';> <tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);' > <td> S.NO...</td><td>ROLL NO</td><td>NAME...</td><td>AGE..</td><td>CLASS..</td><td>maths</td><td>physics</td><td>chemisty</td><td>english</td><td>hindi</td><td>TOTAL MARKS</td><td>PERCENTAGE</td></tr>"
+        );
+        document.write(
+          "<tr align='center' style='background-color: rgb(24, 240, 16); color:rgb(0, 0, 0);'><td>5</td><td>108</td><td>bharat</td><td>18</td><td>12</td><td id='b1'>95</td><td id='b2'>96</td><td id='b3'>94</td><td id='b4'>91</td><td id='b5'>92</td><td id='b6'></td><td id='b7'></td></tr>"
+        );
+        var x = Number(document.getElementById("b1").innerHTML);
+        var y = Number(document.getElementById("b2").innerHTML);
+        var z = Number(document.getElementById("b3").innerHTML);
+        var q = Number(document.getElementById("b4").innerHTML);
+        var r = Number(document.getElementById("b5").innerHTML);
+        var w = x + y + z + q + r;
+        document.getElementById("b6").innerHTML = w;
+        var t = (w / 500) * 100;
+        document.getElementById("b7").innerHTML = t;
+      } else if (want == 109) {
+        document.write(
+          "<table border='1px solid black' width='100%'' height='200px' style='background-color: aquamarine; color:black';> <tr align='center' style='background-color: rgb(240, 76, 16); color:rgb(0, 0, 0);' > <td> S.NO...</td><td>ROLL NO</td><td>NAME...</td><td>AGE..</td><td>CLASS..</td><td>maths</td><td>physics</td><td>chemisty</td><td>english</td><td>hindi</td><td>TOTAL MARKS</td><td>PERCENTAGE</td></tr>"
+        );
+        document.write(
+          "<tr align='center' style='background-color: rgb(24, 240, 16); color:rgb(0, 0, 0);'><td>6</td><td>109</td><td>ritik</td><td>17</td><td>12</td><td id='v1'>99</td><td id='v2'>98</td><td id='v3'>97</td><td id='v4'>95</td><td id='v5'>96</td><td id='v6'></td><td id='v7'></td></tr></table>"
+        );
+        var x = Number(document.getElementById("v1").innerHTML);
+        var y = Number(document.getElementById("v2").innerHTML);
+        var z = Number(document.getElementById("v3").innerHTML);
+        var q = Number(document.getElementById("v4").innerHTML);
+        var r = Number(document.getElementById("v5").innerHTML);
+        var w = x + y + z + q + r;
+        document.getElementById("v6").innerHTML = w;
+        var t = (w / 500) * 100;
+        document.getElementById("v7").innerHTML = t;
+      } else {
+        window.alert(
+          "enter correct rollno this is not able ////// start for 104-109"
+        );
+      }
+    }
+  </script>
+</html>
